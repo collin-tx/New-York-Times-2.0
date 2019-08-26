@@ -1,26 +1,34 @@
-import React from 'react';
-import logo from './logo.svg';
+import React, { Component } from 'react';
+import Articles from './Components/Articles';
+import Fiction from './Components/Fiction';
+import Nonfiction from './Components/Nonfiction';
+import Header from './Components/Header';
+import 'bootstrap/dist/css/bootstrap.css';
 import './App.css';
 
-function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
-}
+export default class App extends Component {
+	state = {
+		websiteName: 'New York Times API'
+	};
 
-export default App;
+	
+
+	render() {
+		return (
+			<main className="p-5">
+				<Header />
+				<h1 className="text-light">{this.state.websiteName}</h1>
+				<div id="articles">
+					<Articles />
+				</div>
+				<div>
+					<h2 className="text-light mt-5">Books from the best-sellers list</h2>
+					<h3 className="text-light m-5">Nonfiction</h3>
+					<Nonfiction />
+					<h3 className="text-light m-5">Fiction</h3>
+					<Fiction />
+				</div>
+			</main>
+		);
+	}
+}
