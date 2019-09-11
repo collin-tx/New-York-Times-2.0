@@ -17,7 +17,7 @@ export class Nonfiction extends Component {
 				loading: true
 			}
 		})
-		const url = `https://api.nytimes.com/svc/books/v3/lists/current/hardcover-nonfiction.json?api-key=VIG56Dw6iVRhP7t27KAlHg9Hif6mSRg5`
+		const url = `https://api.nytimes.com/svc/books/v3/lists/current/hardcover-nonfiction.json?api-key=${process.env.REACT_APP_NYT_APIKEY}`
 		fetch(url).then(response => {
 			return response.json();
 		}).then(data => {

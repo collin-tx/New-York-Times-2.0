@@ -13,7 +13,7 @@ export class Fiction extends Component {
     }
 
     getFiction = () => {
-        const url = `https://api.nytimes.com/svc/books/v3/lists/current/hardcover-fiction.json?api-key=VIG56Dw6iVRhP7t27KAlHg9Hif6mSRg5`;
+        const url = `https://api.nytimes.com/svc/books/v3/lists/current/hardcover-fiction.json?api-key=${process.env.REACT_APP_NYT_APIKEY}`;
         fetch(url).then(response => {
 			return response.json();
 		}).then(data => {

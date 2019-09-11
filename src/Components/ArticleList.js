@@ -13,7 +13,7 @@ export class ArticleList extends Component {
                 <h4>{this.props.title}</h4>
                 <p>{this.props.byLine}</p>
                 <b>{this.props.abstract}</b>
-                <a href={this.props.link} target="_blank">read more</a>
+                <a href={this.props.link} target="_blank" rel="noopener noreferrer">read more</a>
             </li>
         )
     }

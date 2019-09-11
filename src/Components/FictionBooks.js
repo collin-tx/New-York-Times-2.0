@@ -9,7 +9,7 @@ export class FictionBooks extends Component {
 				<p>rank: {this.props.rank}</p>
 				<img src={this.props.img}  alt={this.props.title + " book cover"} />
                 <hr />
-				<a href={this.props.link} className="buy-link" target="_blank">Buy Locally</a>
+				<a href={this.props.link} className="buy-link" target="_blank" rel="noopener noreferrer">Buy Locally</a>
 			</div>
         )
     }

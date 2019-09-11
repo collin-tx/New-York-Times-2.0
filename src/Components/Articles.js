@@ -30,7 +30,7 @@ export class Articles extends Component {
 
    getArticles = () => {
        const input = this.state.value;
-       const url = `https://api.nytimes.com/svc/search/v2/articlesearch.json?q=${input}&api-key=VIG56Dw6iVRhP7t27KAlHg9Hif6mSRg5`;
+       const url = `https://api.nytimes.com/svc/search/v2/articlesearch.json?q=${input}&api-key=${process.env.REACT_APP_NYT_APIKEY}`;
        fetch(url).then(response => {
            return response.json();
        }).then(data => {
