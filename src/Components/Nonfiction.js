@@ -7,7 +7,7 @@ export class Nonfiction extends Component {
         loading: false
     }
 
-    componentWillMount = () => {
+    componentDidMount = () => {
 		this.getBooks();
 	}
 

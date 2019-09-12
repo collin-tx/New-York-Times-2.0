@@ -8,7 +8,7 @@ export class Fiction extends Component {
         loading: false
     }
 
-    componentWillMount = () => {
+    componentDidMount = () => {
         this.getFiction();
     }
 
