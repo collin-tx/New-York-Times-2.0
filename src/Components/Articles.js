@@ -52,8 +52,8 @@ export class Articles extends Component {
                 <h2 className="text-light m-5">Search for NYT Articles</h2>
                 <form onSubmit={this.handleSubmit}>
                     <input type="text" onChange={this.handleChange} value={this.state.value} 
-                    id='userInput' placeholder="Search for an article..." />
-                    <button>Submit</button>
+                    id='userInput' className="form-control" placeholder="Search for an article..." />
+                    <button className="btn btn-primary">Submit</button>
                 </form>
                 <div>
                     <p className="text-light">{this.state.loading && "Loading..."}</p>

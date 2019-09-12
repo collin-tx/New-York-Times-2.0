@@ -40,6 +40,15 @@ form {
   margin: 0 auto !important;
 }
 
+#userInput {
+  width: 300px;
+  display: inline;
+}
+
+.btn {
+  margin-top: -3px;
+}
+
 ul {
   display: flex;
   flex-wrap: wrap;
