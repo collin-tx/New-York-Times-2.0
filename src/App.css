@@ -16,20 +16,29 @@ body {
 
 }
 
-#header {
+#showcase {
+  background: url(./assets/nyt.jpg) center bottom no-repeat;
+  height: 40vh;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-content: center;
+}
+
+
+#nav {
   display: flex;
   justify-content: space-between;
   width: 250px;
   margin: 0 auto;
   margin-bottom: 30px;
 }
-
-.header-link {
+.nav-link {
   color: #fff;
   border-bottom: 1px solid #fff;
 }
 
-.header-link:hover {
+.nav-link:hover {
   opacity: 0.7;
   color: whitesmoke;
 }

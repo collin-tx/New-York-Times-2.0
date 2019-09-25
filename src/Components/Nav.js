@@ -4,9 +4,9 @@ const Nav = () => {
     return (
         <div>
             <div id="nav">
-                <a className="header-link" href="#articles">Articles</a>
-                <a className="header-link" href="#nonfiction">Nonfiction</a>
-                <a className="header-link" href="#fiction">Fiction</a>
+                <a className="nav-link" href="#articles">Articles</a>
+                <a className="nav-link" href="#nonfiction">Nonfiction</a>
+                <a className="nav-link" href="#fiction">Fiction</a>
             </div>
         </div>
     );
