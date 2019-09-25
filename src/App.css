@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css?family=Ralway&display=swap');
+
 html {
   scroll-behavior: smooth !important;
 }
@@ -10,6 +12,8 @@ body {
   background-color: #343a40;
   text-align: center;
   min-height: 100vh;
+  font-family: 'Raleway', sans-serif;
+
 }
 
 #header {

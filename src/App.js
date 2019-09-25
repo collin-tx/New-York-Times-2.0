@@ -3,21 +3,16 @@ import Articles from './Components/Articles';
 import Fiction from './Components/Fiction';
 import Nonfiction from './Components/Nonfiction';
 import Header from './Components/Header';
+import Nav from './Components/Nav'
 import 'bootstrap/dist/css/bootstrap.css';
 import './App.css';
 
 export default class App extends Component {
-	state = {
-		websiteName: 'New York Times API'
-	};
-
-	
-
 	render() {
 		return (
 			<main className="p-5">
-				<Header />
-				<h1 className="text-light">{this.state.websiteName}</h1>
+				<Header  />
+				<Nav />
 				<div id="articles">
 					<Articles />
 				</div>
